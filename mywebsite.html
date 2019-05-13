@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Know your govt</title>
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<style>.mySlides {display: none;}
+
+.slideshow-container {
+  
+  position: relative;
+  margin-right:50;
+  margin-left:50;
+}
+
+
+
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+
+
+</style>
+<script>
+function ask()
+{
+if(confirm("Redirect to Tax Calculator?"))
+{
+var myWindow = window.open("taxcalculator.html", "", "width=600,height=600");
+}
+
+}
+// function welcome(){
+// alert("Welcome to KnowYourGovt!");
+p =new Date();
+
+var z=document.getElementById("mar").value;
+}
+welcome();
+// function changetext(a)
+// {
+// if(a==5){
+// var x=document.getElementById('change');
+// x.style.display="none";
+// var y=document.getElementById('change2');
+// y.style.display="";
+// }
+// else{
+// var y=document.getElementById('change2');
+// y.style.display="none";
+// var x=document.getElementById('change');
+// x.style.display="";
+// }
+
+
+// }
+function goforward()
+{
+window.history.forward();
+}
+function goback(){
+window.history.back(); }
+</script>
+</head>
+<body onload=showSlides() >
+
+<div class="header">
+<marquee><p id=mar></p></marquee>
+<script>
+document.getElementById("mar").innerHTML="Last date to link Aadhar extended until further notice. Current Date:"+new Date();
+</script>
+
+
+  
+</div>
+
+<div class="header2">
+<img src="emblem-dark.png" align=right  style='align: right'/>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<img src="knowgovt.png">
+</div>
+ 
+
+
+<div class="topnav">
+  <a href="#">HOME</a>
+  <a href="housing.html">URBAN AND HOUSING AFFAIRS</a>
+  <a href="finance.html">DEPARTMENT OF FINANCE</a>
+  <a href="" onclick=ask()>TAX CALCULATOR</a><br><br>
+
+
+</div><div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="banner.jpg" width=100%>
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <img src="banner2.jpg" width=100%>
+  <div class="text"></div>
+</div><div class="mySlides fade">
+  <img src="banner3.jpg" width=100%>
+  <div class="text"></div>
+</div></div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+   
+    slides[slideIndex-1].style.display = "block";  
+  
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<br><br>
+<div class="contain">
+
+<div class="row">
+<div class="column"> <div><h1 class="heading1" onmouseover=changetext(6)>IN FOCUS</h1>
+</div>
+<font face="Open Sans"><div id="change"><ul><li></li><li></li>
+<li><h4>Atal Pension Yojana</li>
+<p>In Atal Pension Yojana, for every contribution made to the pension fund, the government would also co-contribute 50% of the total contribution or Rs.1,000/p.a, whichever is lower, to each eligible subscriber account, for a period of 5 years. The minimum age of joining APY is 18 years and maximum age is 40 years. The age of exit and start of pension would be 60 years. Therefore, minimum period of contribution by the subscriber under APY would be 20 years or more...<a href="finance.html#atal" target="_blank">Click here to read more</a></p>
+</p><h4><li>Pradhan Mantri Jan Dhan Yojana (PMJDY)</h4>
+<p><b>Launched:</b> 28 August 2014
+<br><b>Main Objective:</b> Financial inclusion and access to financial services for all households in the country.
+
+Pradhan Mantri Jan Dhan Yojana (PMJDY) is a national mission to bring comprehensive financial inclusion of all the households in the country. Under the PMJDY, any individual above the age of 10 years and does not ave a bank account can open a bank account without depositing any money.
+<br>
+he scheme was to ensure the access to financial services such as banking / savings & deposit Accounts, remittance, credit, debit cards, insurance and pension in affordable manner. The scheme was mostly targeted to the people belonging to the Below Poverty Line but is beneficial to everyone who does not have a bank account.
+
+<br><br>Jan Dhan Yojana has seen a great success, about 21 Crore accounts have been opened in just about one and half year under the scheme. Out of the total 12.87 crore in rural area and 8.13 Crore accounts have been opened in urban areas. Despite of zero minimum balance, there is 33074.89 crore rupees balance in these accounts with 28.88% accounts opened with zero balance.
+
+<br><br><b>Official Website:</b> <a href="http://www.pmjdy.gov.in" target="_blank">Click here</a></p></ul></font></p></p></div>
+<div id="change2" style="display:none;"><ul><li type=none></li><li type=none>&nbsp<li><li><h4>Human Resource Development Ministry Launches Unnat Bharat Abhiyan 2.0
+<li><h4>GSAT-11 Launch Rescheduled</h4></li><li><h4>Smart Cities Mission is the beginning of India’s urban renaissance: Vice President
+</h4></li><li><h4>Health Minister chairs high level review meeting on control of vector borne diseases</h4></li><li><h4>Petrol price touches Rs 74.40, diesel at record high of Rs 65.65</h4></li></ul><p><a href="news.html">Click here for more news</a></p></div>
+
+</div>
+<div class="column2">
+<img src=smart.jpg width=100%>
+<img src=metro.jpg width=100%>
+</div>
+</div>
+
+</div>
+</div>
+<hr width=80%>
+</div><center><h1>Swach Bharat Mission</h1></center>
+<map name="image-map">
+    <area shape="rect" href="housing.html#swach" coords="1240,264,1298,247" >
+</map>
+<img src="swach.jpg" usemap="#image-map">
+
+
+
+
+
+
+
+<div class="footer" >
+<p align=left><button onclick=goback()>Go back to previous page</button></p>
+<p align=right><button onclick=goforward()>Go forward</button></p>
+</div>
+  
+</body>
+</html>

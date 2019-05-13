@@ -1,0 +1,101 @@
+<head>
+<style>
+input[type=text],input[type=number], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+    
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: purple;
+}
+
+div { margin:auto;
+width:50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style></style>
+<script>
+function calculatetax()
+{
+var slab;
+var sla;
+var x=Number(document.f1.income.value);
+var y= Number(document.f1.all.value);
+var z=Number(document.f1.deduction.value);
+if(x<0){
+alert('Error, incorrect income');
+}
+else if(x>=0&&x<250000)
+{
+slab=Number(0);
+var calc=Number((x+y-z)*slab);
+calc=Number(calc/100);
+
+sla='Below 2.5 lakhs(No tax)';
+alert('Slab='+sla+"     Total income tax="+calc);
+
+}
+else if(x<500000){
+
+slab=Number(5);
+var calc=Number((x+y-z)*slab);
+calc=Number(calc/100);
+
+sla='Between 2.5 and 5 lakhs(5%)';
+alert('Slab='+sla+"    Total income tax="+calc);
+
+}
+else if(x<1000000){
+slab=Number(20);
+var calc=Number((x+y-z)*slab);
+calc=Number(calc/100);
+
+sla='Between 5 and 10 lakhs(20%)';
+alert('Slab='+sla+"    Total income tax="+calc);
+
+}
+else if(x>=1000000){
+slab=Number(30);
+var calc=Number((x+y-z)*slab);
+calc=Number(calc/100);
+
+sla='Above 10 lakhs(30%)';
+alert('Slab='+sla+"   Total income tax="+calc);
+
+}
+
+
+
+
+
+
+
+}
+</script>
+</head><body><div>
+<form name=f1>
+Your income:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                       <input type=number name="income" placeholder="Enter the value in rupees"><br><br>
+Allowances/Medical Bills/HRA etc: <input type=number name=all placeholder="Enter the value in rupees"><br><br>
+Deductions:      &nbsp;&nbsp;&nbsp;&nbsp;                  <input type=number  name=deduction placeholder="Enter the deduction in rupees"><br><br>
+<input type=submit value="Calculate Tax" name=sub onclick=calculatetax()>
+<input type=reset>
+</form></div>
+</body>
